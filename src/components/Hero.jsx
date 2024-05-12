@@ -1,5 +1,6 @@
 import { Canvas, extend } from "@react-three/fiber";
 import { OrbitControls, Stage } from "@react-three/drei";
+import Table from './Table'
 extend({ OrbitControls });
 
 const Hero = () => {
@@ -9,18 +10,9 @@ const Hero = () => {
         <Stage
           intensity={1.5}
           environment="city"
-          shadows={{
-            type: "accumulative",
-            color: "#d9afd9",
-            colorBlend: 2,
-            opacity: 2,
-          }}
           adjustCamera={0.9}
         >
-          <mesh castShadow>
-            <meshNormalMaterial />
-            <boxGeometry />
-          </mesh>
+         <Table />
         </Stage>
         <OrbitControls
           makeDefault
