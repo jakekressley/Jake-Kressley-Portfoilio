@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Limelight:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +13,19 @@
   font-family: "Limelight", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  color: #f8f8f8
+}
+
+.arrow-up {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 0; 
+  height: 0; 
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  
+  border-bottom: 60px solid linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .hash-span {

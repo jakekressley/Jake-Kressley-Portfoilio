@@ -88,6 +88,11 @@ const technologies = [
   },
 ];
 
+const about = {
+  headerText: "Welcome to the Investigation.",
+  secondaryText: "Our person of interest is Jake Kressley"
+}
+
 const projects = [
   {
     name: "Reel Hot Takes",
@@ -182,4 +187,4 @@ const projects = [
   },
 ];
 
-export { technologies, projects };
+export { technologies, about, projects };
